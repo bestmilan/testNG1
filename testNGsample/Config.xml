@@ -1,0 +1,41 @@
+<suite name="TestNG - Suite for tests without WebDriver" verbose="10">
+  <parameter name="selenium.host" value="localhost" />
+  <parameter name="selenium.port" value="3737" />
+  <parameter name="selenium.browser" value="*firefox" />
+  <parameter name="selenium.url" value="http://demo.opensourcecms.com/wordpress/" />
+ 
+  <test name="InsertionClasses testing" preserve-order="true">
+    <classes>
+      <class name="class1"/>
+      <class name="class2"/>
+      <class name="class3">
+        <methods>
+          <include name="method_imp*" />
+          <include name="generalmethod" />
+          <exclude name="Redundantmethod" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+  
+  <test name="Get Classes testing" preserve-order="true">
+    <classes>
+      <class name="class1"/>
+      <class name="class2"/>
+      <class name="class3">
+        <methods>
+          <include name="method_imp*" />
+          <include name="generalmethod" />
+          <exclude name="Redundantmethod" />
+        </methods>
+      </class>
+    </classes>
+  </test>
+  
+ <test name="View Classes testing" preserve-order="true">
+    <packages>
+		<package name="test.parameters.Parameter*" />
+	</packages>
+  </test>
+  
+</suite>

@@ -1,0 +1,13 @@
+<suite name="TestNG - Suite for tests without WebDriver" verbose="0" allow-return-values="true">
+   <parameter name="param1"  value="Parveen"/>
+ 
+  <test name="InsertionClasses testing" preserve-order="true">
+    <classes>
+      <!--class name="p1.Parameter"/-->
+      <class name="p1.DataProvid"/>
+      </classes>
+      
+  </test>
+  
+  
+</suite>
